@@ -21,3 +21,8 @@ except TypeError:
 assert(number)	
 
 assert is_odd(45)
+
+
+
+## asserting even numbers
+assert is_odd(30) is False
