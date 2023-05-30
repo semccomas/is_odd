@@ -6,7 +6,10 @@ def is_odd(x):
 	"""
 	if not isinstance(x, int):
 		raise TypeError("'x' must be an integer")
-	return	
+	if x % 2 != 0:
+		return True
+	else:
+		return False	
 
 assert is_odd.__doc__ is not None
 
@@ -17,3 +20,4 @@ except TypeError:
 	number=True
 assert(number)	
 
+assert is_odd(45)
